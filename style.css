@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: 'Inter', sans-serif;
     background-color: #AEC6E9;
     margin: 0;
@@ -104,23 +104,20 @@ p {
     margin-bottom: 20px;
 }
 
-/* Contenedor de logos */
 .company-logos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; /* Espaciado entre logos */
+    gap: 50px;
     flex-wrap: wrap;
 }
 
-/* Logos de las empresas */
 .company-logos img {
     width: 120px;
     height: auto;
     object-fit: contain;
 }
 
-/* Sección Branding & Design System */
 .branding {
     text-align: center;
     padding: 60px 20px;
@@ -149,7 +146,7 @@ p {
     text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid transparent; /* Para resaltar al hacer hover */
+    border: 2px solid transparent;
 }
 
 .card:hover {
@@ -178,7 +175,6 @@ p {
     line-height: 1.6;
 }
 
-/* Invertir orden solo en "Be a part of the next big thing" */
 .container.reverse {
     flex-direction: row-reverse;
 }
@@ -200,37 +196,18 @@ p {
     max-width: 1440px;
 }
 
-/* --- Secciones del Footer --- */
 .footer-section {
     width: 22%;
     min-width: 250px;
     margin-bottom: 20px;
     text-align: center;
+    color: white;
 }
 
-/* --- TITULOS --- */
-.footer-section h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27.5px;
-    letter-spacing: 0%;
-    text-transform: capitalize;
-    margin-bottom: 10px;
+.footer-section h3, .footer-section p, .footer-section ul li a {
+    color: white;
 }
 
-/* --- PARRAFOS --- */
-.footer-section p,
-.footer-section ul li {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: capitalize;
-}
-
-/* --- LISTA DE LINKS --- */
 .footer-section ul {
     list-style: none;
     padding: 0;
@@ -240,25 +217,16 @@ p {
     margin: 8px 0;
 }
 
-.footer-section ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
 .footer-section ul li a:hover {
     color: #ffcc00;
 }
 
-/* --- ICONOS --- */
 .footer-section i {
     font-size: 24px;
     margin-right: 10px;
     color: #ffcc00;
 }
 
-
-/* RESPONSIVE */
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
@@ -302,26 +270,6 @@ p {
     .nav-links li {
         padding: 10px 0;
     }
-    .container {
-        flex-direction: column;
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .container.reverse {
-        flex-direction: column;
-    }
-    h1 {
-        font-size: 36px;
-    }
-    p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-    .btn {
-        width: 140px;
-        height: 40px;
-        line-height: 40px;
-    }
     .image-container img {
         max-width: 90%;
         height: auto;
@@ -331,13 +279,12 @@ p {
         align-items: center;
         text-align: center;
     }
-
     .footer-section {
         width: 100%;
     }
-
     .footer-section i {
         display: block;
         margin-bottom: 5px;
     }
 }
+
