@@ -11,6 +11,7 @@
     ></script>
   </head>
   <body>
+    
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
       <div class="logo">DIGITAL AGENCY</div>
@@ -207,5 +208,13 @@
         </div>
       </div>
     </footer>
+    
+    <script>
+      document.getElementById("menuToggle").addEventListener("click", function () {
+        let navLinks = document.getElementById("navLinks");
+        navLinks.classList.toggle("active");
+      });
+    </script>
+    
   </body>
 </html>
