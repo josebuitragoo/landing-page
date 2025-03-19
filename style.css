@@ -1,0 +1,343 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #AEC6E9;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #AEC6E9;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #272D38;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #272D38;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 188px;
+    gap: 40px;
+}
+
+.text-content {
+    max-width: 540px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    color: #272D38;
+    text-transform: capitalize;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27.5px;
+    color: #272D38;
+}
+
+.btn {
+    display: inline-block;
+    width: 167px;
+    height: 48px;
+    background-color: #272D38;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3A475E;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.companies {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.companies p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #272D38;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de logos */
+.company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Espaciado entre logos */
+    flex-wrap: wrap;
+}
+
+/* Logos de las empresas */
+.company-logos img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Sección Branding & Design System */
+.branding {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.branding h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #272D38;
+    margin-bottom: 40px;
+}
+
+.branding-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent; /* Para resaltar al hacer hover */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: #000000;
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #272D38;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Invertir orden solo en "Be a part of the next big thing" */
+.container.reverse {
+    flex-direction: row-reverse;
+}
+
+.footer {
+    background-color: #1E3A5F;
+    color: white;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1440px;
+}
+
+/* --- Secciones del Footer --- */
+.footer-section {
+    width: 22%;
+    min-width: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* --- TITULOS --- */
+.footer-section h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27.5px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+/* --- PARRAFOS --- */
+.footer-section p,
+.footer-section ul li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+/* --- LISTA DE LINKS --- */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+
+/* --- ICONOS --- */
+.footer-section i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ffcc00;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 50px 40px;
+        text-align: center;
+    }
+    .container.reverse {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 42px;
+    }
+    .image-container img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #AEC6E9;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        padding: 10px 0;
+    }
+    .container {
+        flex-direction: column;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .container.reverse {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .btn {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .image-container img {
+        max-width: 90%;
+        height: auto;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section i {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
