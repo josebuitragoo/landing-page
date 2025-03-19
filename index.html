@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">DIGITAL AGENCY</div>
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#testimonials" class="nav-item">Testimonials</a></li>
+            <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Principal -->
+    <div class="container" id="home">
+        <div class="text-content">
+            <h1>Building Digital Products, Brands & Experience</h1>
+            <p>Digital Agency is your online team management tool that is easy and prompt.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+        <div class="image-container">
+            <img src="business-deal.png" alt="Team Collaboration discussing strategies">
+        </div>
+    </div>
+
+    <!-- Sección de Empresas -->
+    <section class="companies">
+        <p>Trusted by 4,000+ Companies</p>
+        <div class="company-logos">
+            <img src="company1.png" alt="Spotify logo">
+            <img src="company2.png" alt="Slack logo">
+            <img src="company3.png" alt="Dropbox logo">
+            <img src="company4.png" alt="Zoom logo">
+        </div>
+    </section>
+
+    <!-- Sección Branding -->
+    <section class="branding">
+        <h2>Branding & Design System</h2>
+        <div class="branding-cards">
+            <div class="card">
+                <img src="design.png" alt="Website Design icon">
+                <h3>Website Design</h3>
+                <p>Creating stunning, user-friendly websites tailored to your business needs.</p>
+            </div>
+            <div class="card">
+                <img src="dev.png" alt="Web Development icon">
+                <h3>Web Development</h3>
+                <p>Developing fast, secure, and scalable websites for all industries.</p>
+            </div>
+            <div class="card">
+                <img src="mobile.png" alt="Mobile App Development icon">
+                <h3>Mobile App Development</h3>
+                <p>Building innovative and intuitive mobile applications for iOS and Android.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Custom & Plugin Development -->
+    <div class="container">
+        <div class="image-container">
+            <img src="plugin-development.png" alt="Custom Plugin Development Process">
+        </div>
+        <div class="text-content">
+            <h1>Custom & Plugin Development</h1>
+            <p>Enhance your platform with custom plugins tailored to your business needs.</p>
+        </div>
+    </div>
+
+    <!-- Sección Be a Part of the Next Big Thing -->
+    <div class="container reverse">
+        <div class="image-container">
+            <img src="next-big-thing.png" alt="Next Big Thing Collaboration">
+        </div>
+        <div class="text-content">
+            <h1>Be a part of the next big thing</h1>
+            <p>We work with brands, startups, and SMEs. Let's collaborate for impact and growth.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Script de Navbar -->
+    <script>
+        document.getElementById("menuToggle").addEventListener("click", function () {
+            document.getElementById("navLinks").classList.toggle("active");
+        });
+
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener("click", () => {
+                document.getElementById("navLinks").classList.remove("active");
+            });
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <i class="fas fa-building"></i>
+                <h3>Digital Agency</h3>
+                <p>Building Digital Products, Brands & Experience</p>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-book"></i>
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/" target="_blank">Guides</a></li>
+                    <li><a href="https://blog.hubspot.com/" target="_blank">Blog</a></li>
+                    <li><a href="https://www.forbes.com/customer-experience/" target="_blank">Customer Stories</a></li>
+                    <li><a href="https://dictionary.cambridge.org/" target="_blank">Glossary</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-building"></i>
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="https://youtu.be/1kUCm1JPzxg" target="_blank">About Us</a></li>
+                    <li><a href="https://www.indeed.com/career-advice/finding-a-job/what-is-a-career" target="_blank">Careers</a></li>
+                    <li><a href="https://www.businessnewsdaily.com/5007-how-to-find-business-partners.html" target="_blank">Partners</a></li>
+                    <li><a href="tel:+573015350558">Contact Us: 3015350558</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <i class="fas fa-share-alt"></i>
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.tiktok.com/@j0seph_aries" target="_blank">TikTok</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.threads.net/@jose_buitragojz" target="_blank">Instagram</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
